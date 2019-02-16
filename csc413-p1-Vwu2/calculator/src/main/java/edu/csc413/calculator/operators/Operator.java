@@ -1,4 +1,4 @@
-package edu.csc413.calculator.operators;
+package java.edu.csc413.calculator.operators;
 
 
 
@@ -17,8 +17,12 @@ public abstract class Operator {
     // HashMap operators = new HashMap();
     // operators.put( "+", new AdditionOperator() );
     // operators.put( "-", new SubtractionOperator() );
-    
-    
+
+    private static HashMap<String,Operator> dataMap = new HashMap<>();
+
+
+
+
     public abstract int priority();
     public abstract Operand execute(Operand op1, Operand op2 );
 
@@ -30,7 +34,12 @@ public abstract class Operator {
      * Think about what happens if we add more operators.
      */
     public static boolean check( String token ) {
-        return false;
+        boolean pass = false;
+
+        if(token.matches("[-+*/()^]")){
+            pass = true;
+        }
+        return pass;
     }
 
 
