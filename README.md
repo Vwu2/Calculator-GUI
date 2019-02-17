@@ -1,10 +1,10 @@
 # CSC 413 - Project One
 
-## Student Name  : Name here
+## Student Name  : Vincent Wu
 
-## Student ID    : ID here
+## Student ID    : 917238964
 
-## Student Email : Email here
+## Student Email : vwu2@mail.sfsu.edu
 
 ### Note failure to completely fill out this README.md could cause you to recieve a  0 for your project until correctly done
 
