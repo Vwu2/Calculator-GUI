@@ -4,29 +4,45 @@ package edu.csc413.calculator.evaluator;
  * in a valid mathematical expression.
  */
 public class Operand {
-  /**
-  * construct operand from string token.
-  */  
+
+  int value;
+  String token;
+
+
   public Operand( String token ) {
-    
+     //this.token = token;
+     int number = Integer.parseInt(token);
+     this.value = number;
   }
   /**
    * construct operand from integer
    */
   public Operand( int value ) {
-    
+      this.value = value;
   }
-  /**
-   * return value of opernad
-   */
+
   public int getValue() {
-      return 0;
+    return value;
   }
-  /**
-   * Check to see if given token is a valid
-   * operand.
-   */
+
+  public void setValue(int i){
+      this.value = i;
+  }
+
   public static boolean check( String token ) {
-    return false;
+/*
+      int temp;
+
+      temp = Integer.parseInt(token);
+*/
+      try{
+        number = Integer.parseInt(token);
+      } catch(NumberFormatException e){
+          //catching error
+          System.out.println("This isn't a number!");
+          return false;
+      }
+
+      return true;
   }
 }
