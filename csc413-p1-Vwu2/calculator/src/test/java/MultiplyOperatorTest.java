@@ -1,5 +1,5 @@
-import edu.csc413.calculator.evaluator.Operand;
-import edu.csc413.calculator.operators.MultiplyOperator;
+import java.edu.csc413.calculator.evaluator.Operand;
+import java.edu.csc413.calculator.operators.MultiplyOperator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

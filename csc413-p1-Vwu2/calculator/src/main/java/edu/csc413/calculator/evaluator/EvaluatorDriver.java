@@ -1,4 +1,4 @@
-package edu.csc413.calculator.evaluator;
+package java.edu.csc413.calculator.evaluator;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

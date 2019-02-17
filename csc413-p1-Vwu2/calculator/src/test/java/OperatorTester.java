@@ -1,4 +1,6 @@
-import edu.csc413.calculator.operators.*;
+package java;
+
+import java.edu.csc413.calculator.operators.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

@@ -1,5 +1,7 @@
-import edu.csc413.calculator.evaluator.Operand;
-import edu.csc413.calculator.operators.AddOperator;
+package java;
+
+import java.edu.csc413.calculator.evaluator.Operand;
+import java.edu.csc413.calculator.operators.AddOperator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,6 @@
+package java;
 
-import edu.csc413.calculator.evaluator.Evaluator;
+import java.edu.csc413.calculator.evaluator.Evaluator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

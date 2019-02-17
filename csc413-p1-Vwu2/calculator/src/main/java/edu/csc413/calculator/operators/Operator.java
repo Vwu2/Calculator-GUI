@@ -53,5 +53,7 @@ public abstract class Operator {
     }
 
 
-    public static Operator getOperator(String token){return null;}
+    public static Operator getOperator(String token){
+        return dataMap.get(token);
+    }
 }
