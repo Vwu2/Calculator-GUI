@@ -1,4 +1,4 @@
-package edu.csc413.calculator.evaluator;
+package java.edu.csc413.calculator.evaluator;
 /**
  * Operand class used to represent an operand
  * in a valid mathematical expression.
@@ -34,7 +34,10 @@ public class Operand {
       int temp;
 
       temp = Integer.parseInt(token);
+      number;
 */
+      int number;
+
       try{
         number = Integer.parseInt(token);
       } catch(NumberFormatException e){

@@ -1,6 +1,6 @@
-package java.edu.csc413.calculator.operators;
+package java.edu.csc413.calculator.evaluator;
 
-import java.edu.csc413.calculator.evaluator.Operand;
+import java.edu.csc413.calculator.operators.Operator;
 
 public class AddOperator extends Operator {
 

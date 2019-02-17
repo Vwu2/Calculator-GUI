@@ -1,4 +1,5 @@
-package java.edu.csc413.calculator.operators;
+package java.edu.csc413.calculator;
+
 
 public class SubtractOperator extends Operator{
 
