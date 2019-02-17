@@ -5,7 +5,7 @@ package java.edu.csc413.calculator.evaluator;
  */
 public class Operand {
 
-  int value;
+  public int value;
   String token;
 
 
@@ -14,9 +14,7 @@ public class Operand {
      int number = Integer.parseInt(token);
      this.value = number;
   }
-  /**
-   * construct operand from integer
-   */
+
   public Operand( int value ) {
       this.value = value;
   }

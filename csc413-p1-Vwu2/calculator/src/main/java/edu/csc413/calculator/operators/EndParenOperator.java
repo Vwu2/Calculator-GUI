@@ -1,17 +1,16 @@
 package java.edu.csc413.calculator.operators;
 
+
 import java.edu.csc413.calculator.evaluator.Operand;
 
-public class AddOperator extends Operator {
+public class EndParenOperator extends Operator{
 
     public int priority(){
-        return 3;
+        return 2;
     }
 
     public Operand execute(Operand first, Operand second){
-        int temp = 0;
-        temp = first.value + second.value;
-        Operand result = new Operand(temp);
-        return result;
+        System.out.println("Error. Should not be here.");
+        return null;
     }
 }

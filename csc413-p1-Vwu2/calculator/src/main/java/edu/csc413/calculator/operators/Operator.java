@@ -1,8 +1,6 @@
 package java.edu.csc413.calculator.operators;
 
-
-
-import edu.csc413.calculator.evaluator.Operand;
+import java.edu.csc413.calculator.evaluator.Operand;
 
 import java.util.HashMap;
 
@@ -20,12 +18,23 @@ public abstract class Operator {
 
     private static HashMap<String,Operator> dataMap = new HashMap<>();
 
-
+    static{
+        dataMap.put("+", new AddOperator());
+        dataMap.put("-", new SubtractOperator());
+        dataMap.put("*", new MultiplyOperator());
+        dataMap.put("/", new DivideOperator());
+        dataMap.put("^", new PowerOperator());
+        dataMap.put("(", new BeginParenOperator());
+        dataMap.put(")", new EndParenOperator());
+        dataMap.put("!", new LastOperator());
+    }
 
 
 
     public abstract int priority();
-    public abstract Operand execute(Operand op1, Operand op2 );
+
+    public abstract Operand execute( Operand op1, Operand op2 );
+
 
 
     /**
